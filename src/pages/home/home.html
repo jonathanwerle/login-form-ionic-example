@@ -14,4 +14,18 @@
     Take a look at the <code>src/pages/</code> directory to add or change tabs,
     update any existing page or create new pages.
   </p>
+
+  <ion-item>
+    <ion-label stacked>Username</ion-label>
+    <ion-input id="un" [(ngModel)]="username" type="text" autocomplete="on" autocorrect="on" clearInput="true"
+      clearOnEdit="false"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Password</ion-label>
+    <ion-input id="pw" [(ngModel)]="password" type="password" autocomplete="on" autocorrect="on" clearInput="true"
+      clearOnEdit="false"></ion-input>
+  </ion-item>
+  <br />
+  <button ion-button outline (click)="tellMeYourSecrets()">Login</button>
+
 </ion-content>

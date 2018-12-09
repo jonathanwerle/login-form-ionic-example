@@ -6,9 +6,18 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  username;
+  password;
 
   constructor(public navCtrl: NavController) {
 
+  }
+
+  tellMeYourSecrets() {
+    console.log("Your username is: ");
+    console.log(this.username);
+    console.log("Your password is: ");
+    console.log(this.password);
   }
 
 }
